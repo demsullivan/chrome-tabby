@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name":        "chrome-tabby",
+  "description": "This extension allows the user to manage the state of tab groups.",
+  "version":     "0.1",
+
+  "browser_action": {
+    "default_icon":  "icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "tabs"
+  ],
+
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+}

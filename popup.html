@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Tabby</title>
+    <link href="popup.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="underscore.min.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <button id="save-current">Save Current Window</button>
+    <table border="0" id="tab-group-table">
+    </table>
+  </body>
+  <div class="template" id="groupHeading">
+    <tr>
+      <td colspan="2"><a href="#" class="group-link" id="group-<%= index %>"><%= group.name %></a></td>
+    </tr>
+  </div>
+  <div class="template" id="groupRow">
+    <tr>
+      <td><img src="<%= tab.icon %>"/></td>
+      <td><%= tab.title %></td>
+    </tr>
+  </div>
+</html>
